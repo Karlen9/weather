@@ -9,7 +9,6 @@
     "outDir": "./dist/",
     "baseUrl": ".",
     "jsx": "react-jsx",
-    "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
     }

@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--inverted-bg-color);
+  justify-content: space-between;
+}
+
+.rightBar {
+  display: flex;
+  column-gap: 10px;
+}
+
+.links {
+  display: flex;
+  color: var(--secondary-color);
+  column-gap: 5px;
+
+}
+
+
+.logo {
+  color: var(--secondary-color);
+}
