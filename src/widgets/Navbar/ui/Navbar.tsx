@@ -1,6 +1,7 @@
 import { useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames'
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { ThemeSwitch } from 'widgets/ThemeSwitch';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -17,9 +18,7 @@ export const Navbar = ({className}: NavbarProps) => {
 
       <div className={cls.rightBar}>
         <div className={cls.switch}>
-          <button onClick={toggleTheme}>
-            THEME
-            </button>
+          <ThemeSwitch />
         </div>
 
         <div className={cls.links}>
