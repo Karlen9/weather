@@ -1,0 +1,58 @@
+.Button {
+  all: unset;
+  cursor: pointer;
+  padding: 6px 13px;
+  border-radius: 5px;
+  min-width: 50px;
+}
+
+.clear {
+  all: unset;
+  cursor: pointer;
+}
+
+.submit {
+  cursor: pointer;
+  background-color: var(--submit-button-bg);
+  color: var(--submit-button-color)
+}
+
+.cancel {
+  outline: 1px solid var(--cancel-button-outline);
+  background-color: var(--cancel-button-bg);
+  color: var(--cancel-button-outline);
+
+}
+
+.disabled { 
+  background-color: var(--disabled-button-bg);
+  color: var(--disabled-button-color);
+  cursor: not-allowed;
+}
+
+.outlined {
+  outline: 1px solid var(--outlined-color);
+  color: var(--outlined-color)
+}
+
+.icon {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 5px;
+  outline: 1px solid var(--outlined-color);
+  color: var(--outlined-color)
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 13px;
+  border-radius: 5px;
+  outline: 1px solid var(--cancel-button-outline);
+  background-color: var(--cancel-button-bg);
+  color: var(--cancel-button-outline);
+}

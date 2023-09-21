@@ -1,9 +1,10 @@
-import { useTheme } from 'app/providers/ThemeProvider';
+import { Theme, useTheme } from 'app/providers/ThemeProvider';
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './ThemeSwitch.module.scss';
-import DarkIcon from 'shared/assets/icons/theme-dark.svg';
-import LightIcon from 'shared/assets/icons/theme-light.svg';
-import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext';
+import DarkIcon from 'shared/assets/icons/dark-mode.svg';
+import LightIcon from 'shared/assets/icons/light-mode.svg';
+import { Button, ThemeButton } from 'shared/ui/Button/Button';
+
 
 interface ThemeSwitchProps {
   className?: string
@@ -12,9 +13,13 @@ export const ThemeSwitch = ({className}: ThemeSwitchProps) => {
   const { theme, toggleTheme } = useTheme();
   return (
     <div className={classNames(cls.ThemeSwitch, {}, [className])}>
-      <button onClick={toggleTheme}>
-        {theme === Theme.DARK ? <LightIcon width={30} height={30} /> : <DarkIcon width={30} />}
-      </button>
+      <Button 
+        className={cls.button} 
+        theme={ThemeButton.ICON} 
+        onClick={toggleTheme}
+      >
+        {theme === Theme.DARK ? <LightIcon width={20} height={20} /> : <DarkIcon width={20} />}
+      </Button>
     </div>
  )
 }

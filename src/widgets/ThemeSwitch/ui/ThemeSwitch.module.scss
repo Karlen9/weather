@@ -1,0 +1,9 @@
+.button {
+  all: unset;
+  outline: 1px solid var(--inverted-bg-color);
+  border-radius: 7px;
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
