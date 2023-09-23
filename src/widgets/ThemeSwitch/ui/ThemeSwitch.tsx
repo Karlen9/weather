@@ -5,10 +5,10 @@ import DarkIcon from 'shared/assets/icons/dark-mode.svg';
 import LightIcon from 'shared/assets/icons/light-mode.svg';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
 
-
 interface ThemeSwitchProps {
   className?: string
 }
+
 export const ThemeSwitch = ({className}: ThemeSwitchProps) => {
   const { theme, toggleTheme } = useTheme();
   return (
@@ -18,7 +18,10 @@ export const ThemeSwitch = ({className}: ThemeSwitchProps) => {
         theme={ThemeButton.ICON} 
         onClick={toggleTheme}
       >
-        {theme === Theme.DARK ? <LightIcon width={20} height={20} /> : <DarkIcon width={20} />}
+        {theme === Theme.DARK 
+          ? <LightIcon width={23} height={23} /> 
+          : <DarkIcon width={23}  height={23}  />
+        }
       </Button>
     </div>
  )

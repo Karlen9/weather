@@ -1,12 +1,17 @@
 .Sidebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
   height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
   background-color: var(--sidebar-bg);
   position: relative;
   transition: width 0.3s;
-  padding: 20px
+  padding: 20px;
+  border-right: 1px solid var(--primary-color);
 }
 
 .collapsed {
   width: var(--sidebar-collapsed-width);
 }
+

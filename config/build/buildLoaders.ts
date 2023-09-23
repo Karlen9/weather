@@ -4,6 +4,19 @@ import { BuildOptions } from './types/config';
 
 export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
 
+  const reactRefreshWebpack = {
+    test: /\.[jt]sx?$/,
+    exclude: /node_modules/,
+    use: [
+      {
+        loader: require.resolve('babel-loader'),
+        options: {
+          plugins: [isDev && require.resolve('react-refresh/babel')].filter(Boolean),
+        },
+      },
+    ],
+  }
+
   const svgLoader = {
     test: /\.svg$/,
     use: ['@svgr/webpack'],
@@ -28,7 +41,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         options: {
           modules: {
             auto: (resPath: string) => Boolean(resPath.includes('.module.')),
-            localIdentName: !isDev 
+            localIdentName: isDev 
               ? '[path][name]__[local]--[hash:base64:5]'
               : '[hash:base64:8]'
               
@@ -49,6 +62,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     typesctiptLoader, 
     cssLoader,
     svgLoader,
-    fileLoader
+    fileLoader,
+    reactRefreshWebpack
   ]
 }

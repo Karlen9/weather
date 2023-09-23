@@ -14,26 +14,19 @@
   column-gap: 10px;
 }
 
+.leftBar {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
 .links {
   display: flex;
-  color: var(--secondary-color);
-  column-gap: 5px;
-
+  column-gap: 20px;
+  margin-right: 50px;
 }
 
 
 .logo {
-  color: var(--secondary-color);
-}
-
-.github {
-  display: flex;
-  border-radius: 7px;
-  cursor: pointer;
-  padding: 3px;
-  outline: 1px solid var(--inverted-bg-color);
-}
-
-.githubRef {
-  all: unset;
+  color: var(--primary-color);
 }
