@@ -3,13 +3,17 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:react/recommended', 'standard-with-typescript'],
+  extends: [
+    'plugin:react/recommended',
+    'standard-with-typescript',
+    'plugin:i18next/recommended'
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['react'],
+  plugins: ['react', '@typescript-eslint', 'i18next'],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react/react-in-jsx-scope': 'off',
@@ -23,7 +27,9 @@ module.exports = {
     'multiline-ternary': [1, 'never'],
     '@typescript-eslint/ban-ts-comment': 'off',
     'react/jsx-indent-props': [2, 2],
-    'react/function-component-definition': 'off'
+    'react/function-component-definition': 'off',
+    'i18next/no-literal-string': ['warn', { markupOnly: true }],
+    'react/no-deprecated': 'off'
   },
   globals: {
     _IS_DEV_: true

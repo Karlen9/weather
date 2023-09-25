@@ -1,3 +1,4 @@
 import { lazy } from 'react'
 
-export const MainPageLazy = lazy(async () => await import('./MainPage'))
+// eslint-disable-next-line @typescript-eslint/promise-function-async
+export const MainPageLazy = lazy(() => import('./MainPage'))

@@ -7,7 +7,8 @@ export const TranslateToggle = () => {
   const { i18n } = useTranslation()
 
   const toggle = () => {
-    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru').catch((err) => {
+    const lang = i18n.language === 'ru' ? 'en' : 'ru'
+    i18n.changeLanguage(lang).catch((err) => {
       console.error(err)
     })
   }
