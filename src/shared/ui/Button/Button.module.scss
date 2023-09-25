@@ -14,17 +14,16 @@
 .submit {
   cursor: pointer;
   background-color: var(--submit-button-bg);
-  color: var(--submit-button-color)
+  color: var(--submit-button-color);
 }
 
 .cancel {
   outline: 1px solid var(--cancel-button-outline);
   background-color: var(--cancel-button-bg);
   color: var(--cancel-button-outline);
-
 }
 
-.disabled { 
+.disabled {
   background-color: var(--disabled-button-bg);
   color: var(--disabled-button-color);
   cursor: not-allowed;
@@ -32,7 +31,7 @@
 
 .outlined {
   outline: 1px solid var(--outlined-color);
-  color: var(--outlined-color)
+  color: var(--outlined-color);
 }
 
 .icon {
@@ -43,7 +42,7 @@
   padding: 03px;
   border-radius: 5px;
   outline: 1px solid var(--outlined-color);
-  color: var(--outlined-color)
+  color: var(--outlined-color);
 }
 
 .loading {

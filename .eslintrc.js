@@ -24,5 +24,8 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'off',
     'react/jsx-indent-props': [2, 2],
     'react/function-component-definition': 'off'
+  },
+  globals: {
+    _IS_DEV_: true
   }
 }
