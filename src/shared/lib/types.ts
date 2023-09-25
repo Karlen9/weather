@@ -1,4 +1,3 @@
-
-export type IconProps  = {
-  color: string;
-} & React.SVGAttributes<SVGSVGElement>;
+export type IconProps = {
+  color: string
+} & React.SVGAttributes<SVGSVGElement>

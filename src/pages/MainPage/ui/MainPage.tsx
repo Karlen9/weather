@@ -1,17 +1,11 @@
-import { Button, ThemeButton } from "shared/ui/Button/Button";
-import cls from './MainPage.module.scss';
-import { classNames } from "shared/lib/classNames/classNames";
-import { useTranslation } from "react-i18next";
-
+import cls from './MainPage.module.scss'
+import { classNames } from 'shared/lib/classNames/classNames'
+import { useTranslation } from 'react-i18next'
 
 const MainPage = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
 
-  return (
-    <div className={classNames(cls.MainPage, {}, [])}>
-      {t('Главная')}    
-    </div>
-  );
-};
+  return <div className={classNames(cls.MainPage, {}, [])}>{t('Главная')}</div>
+}
 
-export default MainPage;
+export default MainPage

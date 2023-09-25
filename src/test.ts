@@ -1,3 +1,3 @@
-export function someFn(arg?: number): void {
+export function someFn(): void {
   console.log('some func ts')
 }

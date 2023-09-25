@@ -11,7 +11,8 @@
     "jsx": "react-jsx",
     "paths": {
       "*": ["./src/*"]
-    }
+    },
+    "strictNullChecks": true
   },
   "ts-node": {
     "compilerOptions": {
