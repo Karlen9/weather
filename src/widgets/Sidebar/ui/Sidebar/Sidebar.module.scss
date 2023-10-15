@@ -4,13 +4,15 @@
   align-items: start;
   height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
-  background-color: var(--sidebar-bg);
+  background-color: var(--sidebar-open-bg);
   position: relative;
-  transition: width 0.3s;
+  transition: background-color 0.3s, width 0.3s;
   padding: 20px;
-  border-right: 1px solid var(--primary-color);
+  // border-right: 1px solid var(--primary-color);
 }
 
 .collapsed {
   width: var(--sidebar-collapsed-width);
+  background-color: var(--sidebar-bg);
+  transition: background-color 0.3s, width 0.3s;
 }

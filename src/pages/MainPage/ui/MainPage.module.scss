@@ -2,3 +2,18 @@
   margin-top: 10px;
   margin-left: 10px;
 }
+
+.nameSection {
+  height: calc(100vh - 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nameSpan {
+  font-size: 164px;
+  font-weight: 600;
+  user-select: none;
+  // color: var(--main-title-color);
+}

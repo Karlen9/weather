@@ -1,3 +1,16 @@
 .TranslateToggle {
   border: 1px solid black;
 }
+
+.select {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyCircle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  outline: 1px solid #fff;
+}

@@ -1,9 +1,9 @@
 {
-  "Тестовый пример": "Test example",
-  "Перевод": "Translation",
-  "Подтвердить": "Submit",
-  "Отменить": "Cancel",
-  "Главная": "Main",
-  "О сайте":"About",
-  "Загрузка": "Loading"
+  "Translation": "Translation",
+  "Submit": "Submit",
+  "Cancel": "Cancel",
+  "Main": "Main",
+  "About":"About",
+  "Loading": "Loading",
+  "I am Karlen": "I'm Karlen"
 }
