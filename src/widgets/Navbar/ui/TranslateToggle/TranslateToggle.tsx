@@ -34,7 +34,7 @@ export const TranslateToggle = () => {
     <div>
       {
         isSelectOpen ? 
-        <>
+        <div className={cls.toggle}>
           <Button theme={ThemeButton.CLEAR} onClick={onOpenSelect}>
             <div className={cls.emptyCircle} />
           </Button>
@@ -49,7 +49,7 @@ export const TranslateToggle = () => {
               <SpainFlag width={28} height={28} />
             </Button>
           </div> 
-        </>
+        </div>
 
             : 
           <Button theme={ThemeButton.CLEAR} onClick={onOpenSelect}>

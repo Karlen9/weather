@@ -8,9 +8,10 @@
 .app {
   font-size: var(--font-m);
   font-family: var(--font-family-main);
-  background: var(--bg-color);
-  color: var(--primary-color);
+  background: var(--main-background-color);
+  color: var(--primary-text-color);
   min-height: 100vh;
+  padding: 20px;
 }
 
 .content-page {
@@ -19,5 +20,4 @@
 
 .page-wrapper {
   flex-grow: 1;
-  padding: 20px;
 }

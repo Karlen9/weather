@@ -15,5 +15,28 @@
   font-size: 164px;
   font-weight: 600;
   user-select: none;
-  // color: var(--main-title-color);
+}
+
+.MainPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  height: calc(100vh - 40px);
+}
+
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

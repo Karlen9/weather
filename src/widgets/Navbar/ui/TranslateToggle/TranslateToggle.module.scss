@@ -1,11 +1,12 @@
 .TranslateToggle {
   border: 1px solid black;
+  display: flex;
 }
 
 .select {
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .emptyCircle {
@@ -13,4 +14,9 @@
   height: 28px;
   border-radius: 50%;
   outline: 1px solid #fff;
+}
+
+
+.toggle {
+  display: flex;
 }
