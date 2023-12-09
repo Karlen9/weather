@@ -1,19 +1,71 @@
 .SevenDayForecast {
-    border-radius: 20px;
-    padding: 200px;
-    background-color: var(--background-color);
+  height: 100%;
 }
 
 .week {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  font-weight: 700;
 }
 
 .day {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--primary-text-color);
-    column-gap: 20px;
+  display: flex;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--secondary-text-color);
+  align-items: center;
+  column-gap: 20px;
+  flex-grow: 1;
+}
+
+.day:last-child {
+  border: none;
+}
+
+.condition {
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.conditionContainer {
+  display: flex;
+  column-gap: 10px;
+}
+
+.chanceOfRain {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.wrapper {
+  border-radius: 20px;
+  background-color: var(--background-color);
+  padding: 20px 50px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1465px) {
+  .SevenDayForecast {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .condition,
+  .chanceOfRain {
+    display: none;
+  }
+
+  .SevenDayForecast {
+    padding: 0;
+  }
 }

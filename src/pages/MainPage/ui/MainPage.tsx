@@ -14,8 +14,9 @@ const MainPage = () => {
   const { name } = useAppSelector((state) => state.cityReducer)
   const dispatch = useAppDispatch()
 
-  const city = 'Taganrog'
+  const city = 'Voronezh'
 
+ 
   const { weather, error } = useCurrentWeather(city)
   const { dayForecast, error: dayForecastError } = useOneDayForecast(city);
 
@@ -60,7 +61,7 @@ const MainPage = () => {
               />
             </div>
           </div>
-          <SevenDayForecast />
+          <SevenDayForecast city={city} />
         </div>
       ) : (
         <div className={cls.error}>{error}</div>

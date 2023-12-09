@@ -35,3 +35,17 @@
 .logo {
   color: var(--primary-color);
 }
+
+
+
+@media (max-width: 1465px) {
+  .navbar {
+      height: 100vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+}

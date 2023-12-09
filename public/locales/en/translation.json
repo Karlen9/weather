@@ -42,5 +42,19 @@
   "Hailstorm": "Hailstorm",
   "Hurricanes": "Hurricanes",
   "Sandstorms": "Sandstorms",
-  "Mist": "Mist"
+  "Mist": "Mist",
+  "Theme": "Theme",
+  "Light rain": "Light rain",
+  "Light snow": "Light snow",
+  "Heavy snow": "Heavy snow",
+  "Moderate snow":"Moderate snow",
+  "Sunny": "Sunny",
+  "Moderate rain": "Moderate rain",
+  "Patchy rain possible": "Patchy rain possible",
+  "Light freezing rain": "Light freezing rain",
+  "Light drizzle": "Light drizzle",
+  "Blowing snow": "Blowing snow",
+  "Blizzard": "Blizzard",
+  "Moderate or heavy snow showers":"Moderate or heavy snow showers",
+  "Patchy moderate snow":"Patchy moderate snow"
 }

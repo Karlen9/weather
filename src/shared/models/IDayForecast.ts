@@ -4,7 +4,7 @@ export interface IDayForecast {
   }
 }
 
-interface I {
+export interface I {
   astro: {
     sunrise: string
     sunset: string
@@ -15,7 +15,7 @@ interface I {
     is_moon_up: number
     is_sun_up: number
   }
-  date: Date
+  date: string
   date_epoch: number
   day: {
     maxtemp_c: number

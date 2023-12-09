@@ -1,29 +1,36 @@
 .AirConditions {
-    width: 100%;
-    padding: 20px;
-    height: auto;
-    background-color: var(--background-color)   ;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
-    padding: 10px 30px;
-
+  padding: 10px 30px;
 }
 
 .properties {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
 }
 
 .leftBlock,
 .rightBlock {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .properties {
     flex-direction: column;
-    width: 100%;
     row-gap: 30px;
+    padding-left: 30px;
+  }
 }

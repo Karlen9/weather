@@ -42,5 +42,17 @@
   "Hailstorm": "Град",
   "Hurricanes": "Ураган",
   "Sandstorms": "Песчаная буря",
-  "Mist": "Туман"
+  "Mist": "Туман",
+  "Theme": "Тема",
+  "Light snow": "Легкий снег",
+  "Heavy snow": "Сильный снег",
+  "Moderate snow":"Cнег",
+  "Sunny": "Солнечно",
+  "Moderate rain": "Дождь",
+  "Patchy rain possible": "Возможен небольшой дождь",
+  "Light freezing rain": "Небольшой ледяной дождь",
+  "Light drizzle": "Легкий моросящий дождь",
+  "Blowing snow": "Сильный снег",
+  "Blizzard": "Метель",
+  "Moderate or heavy snow showers":"Умеренный или сильный снегопад"
 }

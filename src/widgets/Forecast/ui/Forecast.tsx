@@ -23,7 +23,7 @@ export const Forecast = (props: ForecastProps) => {
                     <div key={hour.time_epoch} className={cls.oneHour}>
                         <div>{`${getHourFromDate(hour.time)}:00`}</div>
                         <img src={hour.condition.icon} alt="" />  
-                        <div className={cls.temperature}>{Math.floor(hour.temp_c)}</div>  
+                        <div className={cls.temperature}>{Math.floor(hour.temp_c)}°</div>  
                     </div>
                 ))}
             </div>
