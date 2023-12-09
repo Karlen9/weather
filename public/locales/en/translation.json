@@ -21,6 +21,7 @@
   "Units": "Units",
   "Temperature": "Temperature",
   "Wind speed": "Wind speed",
+  "Wind direction": "Wind direction",
   "Pressure": "Pressure",
   "Precipitation": "Precipitation",
   "Distance": "Distance" ,
@@ -56,5 +57,6 @@
   "Blowing snow": "Blowing snow",
   "Blizzard": "Blizzard",
   "Moderate or heavy snow showers":"Moderate or heavy snow showers",
-  "Patchy moderate snow":"Patchy moderate snow"
+  "Patchy moderate snow":"Patchy moderate snow",
+  "Search for city":"Search for city"
 }

@@ -32,11 +32,10 @@ export const Location: React.FC<LocationProps> = (props) => {
     <div className={classNames(cls.Location)}>
       <div className={cls.leftBlock}>
         <div className={cls.cityPercent}>
-          <div className={cls.city}> 
+          <div className={cls.city}>
             <div>{cityName}</div>
-            <img src={icon} width={128} alt="" />
           </div>
-          <div className={cls.percent}>
+          <div className={cls.humidity}>
             {t('Humidity')}: {humidity}%
           </div>
         </div>
@@ -44,19 +43,22 @@ export const Location: React.FC<LocationProps> = (props) => {
         <div className="">
           <div className={cls.tempAndCondition}>
             <div className={cls.temp}>{temperature}℃</div>
-          
+
+            <img src={icon} width={128} alt="" />
           </div>
         </div>
       </div>
       <div className={cls.rightBlock}>
         <div className={cls.windContainer}>
-          <img
-            src={theme === 'dark' ? windRoseDark : windRose}
-            className={`${cls[windDirection[windDir ?? 'S']]} ${cls.wind}`}
-            width={200}
-          />
-          Направление ветра
-        </div> 
+          <div className={cls.rose}>
+            <img
+              src={theme === 'dark' ? windRoseDark : windRose}
+              className={`${cls[windDirection[windDir ?? 'S']]} ${cls.wind}`}
+              width={200}
+            />
+          </div>
+          {t('Wind direction')}
+        </div>
       </div>
     </div>
   )

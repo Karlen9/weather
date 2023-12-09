@@ -1,0 +1,15 @@
+.NotFound {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.errorCode {
+    font-size: var(--font-size-4xl);
+}
+
+.errorText {
+    font-size: var(--font-size-l);
+}

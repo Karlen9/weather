@@ -19,7 +19,7 @@ export const useOneDayForecast = (city?: string) => {
           .catch((err) => {
             setError(err.message)
           })
-      }, [])
+      }, [city])
 
       return {dayForecast, error}
 }

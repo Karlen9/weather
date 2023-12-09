@@ -5,7 +5,6 @@ import { I, IDayForecast } from "shared/models/IDayForecast";
 
 const NUMBER_OF_DAYS = 7;
 const API_KEY = process.env.API_KEY || 'f79b0f90764d4756b7e180149230512';
-const tomorrow = getTomorrow();
 
 export const use7DayForecast = (city: string = 'Taganrog') => {
     const [sevenDayForecast, setSevenDayForecast] = useState<I[]>();
@@ -20,7 +19,7 @@ export const use7DayForecast = (city: string = 'Taganrog') => {
           .catch((err) => {
             setError(err.message)
           })
-      }, [])
+      }, [city])
 
     return {sevenDayForecast, error}
 }

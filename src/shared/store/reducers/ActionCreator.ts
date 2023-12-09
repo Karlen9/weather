@@ -1,4 +1,3 @@
-import { useAppSelector } from 'shared/hooks/redux'
 import { AppDispatch } from '../store'
 import { citySlice } from './CitySlice'
 import axios from 'axios'
@@ -23,11 +22,10 @@ export const fetchCity = () => async (dispatch: AppDispatch) => {
     const response = await axios.get(
       `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}`
     )
-    console.log(response)
     dispatch(
       citySlice.actions.cityFetchingSuccess({
         name: response.data.city,
-        lat: response.data.latitudem,
+        lat: response.data.latitude,
         lon: response.data.longitude
       })
     )

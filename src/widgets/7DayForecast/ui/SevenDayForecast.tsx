@@ -28,9 +28,9 @@ export const SevenDayForecast: React.FC<Props> = ({ city }) => {
         <div className={cls.header}>7-DAY FORECAST</div>
         <div className={cls.week}>
           {sevenDayForecast &&
-            sevenDayForecast.map((day) => (
+            sevenDayForecast.map((day, i) => (
               <div className={cls.day} key={day.date_epoch}>
-                <div>{day.date}</div>
+                <div>{i === 0 ? t('Today') : i === 1 ? t('Tomorrow') : day.date}</div>
                 <div className={cls.conditionContainer}>
                   <div>
                     <img src={day.day.condition.icon} alt="" />

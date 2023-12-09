@@ -25,7 +25,7 @@
 }
 
 .feelsLike,
-.percent {
+.humidity {
   font-size: var(--font-size-l);
 }
 
@@ -33,6 +33,7 @@
   display: flex;
   margin-bottom: 20px;
   column-gap: 10px;
+  align-items: end;
 }
 
 .condition {
@@ -47,6 +48,11 @@
   display: flex;
   height: 100%;
   align-items: flex-end;
+}
+
+.rose {
+  display: flex;
+  justify-content: center;
 }
 
 .East {
@@ -124,6 +130,12 @@
   white-space: nowrap;
 }
 
+@media (max-width: 1465px) {
+  .leftBlock {
+    row-gap: 20px;
+  }
+}
+
 @media (max-width: 1100px) {
   .Location {
     flex-direction: column;
@@ -140,16 +152,32 @@
   .temp {
     font-size: var(--font-size-3xl);
   }
+  .humidity {
+    display: none;
+  }
+  
 }
 
 @media (max-width: 800px) {
   .city {
     font-size: var(--font-size-xl);
-    flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
 
   .temp {
     font-size: var(--font-size-2xl);
   }
+
+  .leftBlock {
+    row-gap: 60px;
+  }
+
+  .windContainer {
+    display: none;
+  }
+
+  .tempAndCondition {
+    align-items: end;
+  }
 }
+

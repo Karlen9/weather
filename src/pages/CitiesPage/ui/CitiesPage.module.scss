@@ -1,0 +1,15 @@
+.CitiesPage {
+    display: flex;
+    height: 100%;
+    font-size: var(--font-size-xl);
+    color: var(--secondary-text-color);
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.cityContainer {
+    padding: 30px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 20px;
+}

@@ -35,8 +35,8 @@ export const citySlice = createSlice({
       state.isLoading = false
       state.error = action.payload
     },
-    setLocationCity(state, action: PayloadAction<CityState>) {
-      state = action.payload
+    setLocationCity(state, action: PayloadAction<string>) {
+      state.name = action.payload
     }
   }
 })
