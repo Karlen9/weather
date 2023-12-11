@@ -1,0 +1,17 @@
+.cityContainer {
+    padding: 30px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    display: flex;
+    font-size: var(--font-size-s);
+    flex-grow: 1;
+}
+
+.cityName {
+    min-width: 300px;
+}
